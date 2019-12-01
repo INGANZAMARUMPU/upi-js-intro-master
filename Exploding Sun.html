@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UPI - Web Programming 101</title>
+  <link rel="icon" href="upi.ico" type="image/x-icon" />
+  <script src="processing.js"></script>
+  <script type="application/processing" data-processing-target="pjs">
+    void setup() {
+      size(400, 400);
+
+      noStroke();
+      // the starting size for the sun
+      var sunSize = 30; 
+
+      draw = function(){
+          // the beautiful blue sky
+          background(82, 222, 240);
+          
+           // The sun, a little circle on the horizon
+          fill(255, 204, 0);
+          ellipse(200, 298, sunSize, sunSize);
+          
+          // The land, blocking half of the sun
+          fill(76, 168, 67);
+          rect(0, 300, 400, 100);
+
+      };      
+    }
+  </script>
+</head>
+<body>
+  <h1>Drawing basics</h1>
+  <p>Challenge: The Snowman</p>
+  <canvas id="pjs"> </canvas>
+</body>
+</html>
