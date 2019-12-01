@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UPI - Web Programming 101</title>
+  <link rel="icon" href="upi.ico" type="image/x-icon" />
+  <script src="processing.js"></script>
+  <script type="application/processing" data-processing-target="pjs">
+    void setup() {
+      size(400, 400);
+
+      var x = 200;
+      var y = 250;
+
+      noStroke();
+      fill(30, 204, 91); // a nice froggy green!
+
+      ellipse(x, y, 200, 100); // face
+      ellipse(x - 50, y - 50, 40, 40); // left eye socket
+      ellipse(x + 50, y - 50, 40, 40); // right eye socket
+
+      fill(255, 255, 255); // for the whites of the eyes!
+      ellipse(x - 50, y - 50, 30, 30); // left eyeball
+      ellipse(x + 50, y - 50, 30, 30); // right eyeball
+
+      fill(0, 0, 0); // for the whites of the eyes!
+      ellipse(x, y , 150, 50); // right eyeball
+      
+    }
+  </script>
+</head>
+<body>
+  <h1>Drawing basics</h1>
+  <p>Challenge: The Snowman</p>
+  <canvas id="pjs"> </canvas>
+</body>
+</html>
