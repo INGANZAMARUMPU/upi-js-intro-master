@@ -9,9 +9,10 @@
       size(400, 400);
 
 noStroke();
-var x = 300;
-var y = 300;
-var faceSize = 260;
+var x = 200;
+var y = 200;
+var faceSize = 160;
+var eye_size = faceSize/8;
 
 // ears
 var earSize=faceSize*1/2;
@@ -27,14 +28,15 @@ ellipse(x, y, faceSize, faceSize);
 
 //eyes 
 fill(0, 0, 0);
-ellipse(160, 180, 20, 20);
-ellipse(240, 180, 20, 20);
+ellipse(x-40, y-20, eye_size, eye_size);
+ellipse(x+40, y-20, eye_size, eye_size);
 
 
 
 //nose
 fill(89, 52, 20);
 ellipse(x, y+faceSize/8, faceSize*4/15, faceSize/5);
+
 
       
     }
