@@ -8,11 +8,10 @@
     void setup() {
       size(400, 400);
       
-noStroke();
-
 draw = function() {
-    fill(mouseX, mouseY/400*255, (mouseX+mouseY)/800*255);
-    ellipse(mouseX, mouseY, mouseX, mouseY,);
+    stroke(0, 0, 100);
+    fill(mouseX/400*255, mouseY/400*255, ((mouseX+mouseY)/800)*255);
+    ellipse(mouseX, mouseY, mouseY, mouseX);
 };
 
     }
