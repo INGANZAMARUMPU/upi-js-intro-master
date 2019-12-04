@@ -8,10 +8,7 @@
     void setup() {
       size(400, 400);
       
-var drawMole = function() {
-    var moleX = 248;
-    var moleY = 185;
-    
+var drawMole = function(moleX, moleY) {
     noStroke();
     fill(125, 93, 43);
     ellipse(moleX, moleY, 60, 60); // face
@@ -30,7 +27,8 @@ ellipse(200, 200, 100, 30); // holes!
 ellipse(70, 119, 100, 30);
 ellipse(300, 60, 100, 30);
 ellipse(297, 350, 100, 30);
-drawMole();
+
+drawMole(200, 200);
     }
   </script>
 </head>
