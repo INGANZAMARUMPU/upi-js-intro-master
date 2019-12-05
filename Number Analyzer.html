@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UPI - Web Programming 101</title>
+  <link rel="icon" href="upi.ico" type="image/x-icon" />
+  <script src="processing.js"></script>
+  <script type="application/processing" data-processing-target="pjs">
+    void setup() {
+      size(400, 400);
+      
+var theNumber = 100;
+
+fill(0, 0, 0);
+textSize(30);
+text("Analysis of: " + theNumber, 10, 36);
+
+text("It's positive", 10, 90);
+text("It's negative", 10, 140);
+text("It's zero", 10, 190);
+
+noFill();
+rect(5, 60, 200, 40); 
+
+    }
+  </script>
+</head>
+<body>
+  <h1>Drawing basics</h1>
+  <p>Challenge: The Snowman</p>
+  <canvas id="pjs"> </canvas>
+</body>
+</html>
