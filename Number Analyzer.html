@@ -8,7 +8,7 @@
     void setup() {
       size(400, 400);
       
-var theNumber = 100;
+var theNumber = -6;
 
 fill(0, 0, 0);
 textSize(30);
@@ -19,11 +19,16 @@ text("It's negative", 10, 140);
 text("It's zero", 10, 190);
 
 noFill();
-if(theNumber === 100){
+if(theNumber === 0){
+    rect(5, 160, 200, 40);
+}
+if(theNumber > 0){
     rect(5, 60, 200, 40);
 }
-rect(5, 110, 200, 40);
-rect(5, 160, 200, 40);
+if(theNumber < 0){
+    rect(5, 110, 200, 40);
+}
+
     }
   </script>
 </head>
