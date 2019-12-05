@@ -10,7 +10,7 @@
 draw = function() {
     fill(0, 255, 68); // start color
 
-    if (mousePressed) { 
+    if (mousePressed && mouseX>50 && mouseY>150 && mouseX<300 && mouseY<250) { 
         fill(33, 112, 52); // click color
     }
     rect(50, 150, 250, 100);  // the button
