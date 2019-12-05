@@ -9,7 +9,7 @@
       size(400, 400);
 draw = function() {
     fill(0, 255, 68); // start color
-    if(mousePressed){
+    if(mousePressed && mouseY<200){
         fill(255, 0, 0);
     }
     rect(0, 0, 400, 200);  // the button
