@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UPI - Web Programming 101</title>
+  <link rel="icon" href="upi.ico" type="image/x-icon" />
+  <script src="processing.js"></script>
+  <script type="application/processing" data-processing-target="pjs">
+    void setup() {
+      size(400, 400);
+      
+background(255, 255, 247);
+stroke(173, 222, 237);
+
+var i = 0;
+while (i < 20) {
+    var lineY = 20 + (i * 20);
+    line(0, lineY, 400, lineY);
+    i++;
+}     
+    }
+  </script>
+</head>
+<body>
+  <h1>Drawing basics</h1>
+  <p>Challenge: The Snowman</p>
+  <canvas id="pjs"> </canvas>
+</body>
+</html>
