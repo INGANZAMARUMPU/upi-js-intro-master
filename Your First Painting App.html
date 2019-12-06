@@ -7,9 +7,11 @@
   <script type="application/processing" data-processing-target="pjs">
     void setup() {
       size(400, 400);
-      
+
 draw = function() {
-    ellipse(mouseX, mouseY, 20, 20);
+    if(mousePressed){
+        ellipse(mouseX, mouseY, 20, 20);
+    }
 };
 
     }
