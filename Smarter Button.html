@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UPI - Web Programming 101</title>
+  <link rel="icon" href="upi.ico" type="image/x-icon" />
+  <script src="processing.js"></script>
+  <script type="application/processing" data-processing-target="pjs">
+    void setup() {
+      size(400, 400);
+draw = function() {
+    fill(0, 255, 68); // start color
+
+    if (mousePressed) { 
+        fill(33, 112, 52); // click color
+    }
+    rect(50, 150, 250, 100);  // the button
+
+    // The button text
+    fill(0, 0, 0);
+    textSize(30);
+    text("PRESS ME!", 93, 193);
+};
+    }
+  </script>
+</head>
+<body>
+  <h1>Drawing basics</h1>
+  <p>Challenge: The Snowman</p>
+  <canvas id="pjs"> </canvas>
+</body>
+</html>
