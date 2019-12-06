@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UPI - Web Programming 101</title>
+  <link rel="icon" href="upi.ico" type="image/x-icon" />
+  <script src="processing.js"></script>
+  <script type="application/processing" data-processing-target="pjs">
+    void setup() {
+      size(400, 400);
+fill(17, 0, 255);
+
+// a handy dandy ruler across the top
+var x = 0;
+text(x, x, 10); 
+text(x+50, x+50, 10);
+text(x+100, x+100, 10);
+text(x+150, x+150, 10);
+text(x+200, x+200, 10);
+text(x+250, x+250, 10);
+text(x+300, x+300, 10);
+text(x+350, x+350, 10);
+    }
+  </script>
+</head>
+<body>
+  <h1>Drawing basics</h1>
+  <p>Challenge: The Snowman</p>
+  <canvas id="pjs"> </canvas>
+</body>
+</html>
