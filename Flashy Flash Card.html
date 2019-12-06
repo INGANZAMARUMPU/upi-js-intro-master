@@ -14,7 +14,11 @@ draw = function() {
 
     fill(0, 0, 0);
     textSize(20);
-    text("What programming language is this?", 39, 200);
+    if(mousePressed){
+        text("Processing.js", 39, 200);
+    } else{
+        text("What programming language is this?", 39, 200);
+    }
 };
     }
   </script>
