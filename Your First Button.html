@@ -9,13 +9,16 @@
       size(400, 400);
 draw = function() {
     fill(0, 255, 68); // start color
+    if(mousePressed){
+        fill(255, 0, 0);
+    }
     rect(0, 0, 400, 200);  // the button
 
     // The button text
     fill(0, 0, 0);
     textSize(30);
     text("Press me!", 145, 115);
-};     
+};   
     }
   </script>
 </head>
