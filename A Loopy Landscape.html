@@ -20,8 +20,11 @@ var tree = getImage("cute/TreeUgly");
 
 // Draw the tree and grass once
 var x = 0;
-image(grass, x, 270);
-image(tree, x, 200);
+while(x<400){
+    image(grass, x, 270);
+    image(tree, x, 200);
+    x+=100;
+}
     }
   </script>
 </head>
