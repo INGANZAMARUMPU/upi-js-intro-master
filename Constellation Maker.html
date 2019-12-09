@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UPI - Web Programming 101</title>
+  <link rel="icon" href="upi.ico" type="image/x-icon" />
+  <script src="processing.js"></script>
+  <script type="application/processing" data-processing-target="pjs">
+    void setup() {
+      size(400, 400);
+
+star = loadImage("space/star.png")
+var xPositions = [100];
+var yPositions = [200];
+
+draw = function (){
+  var drawStars = function() {
+    background(9, 5, 59);
+    imageMode(CENTER);
+    for (var i = 0; i < yPositions.length; i++) {
+        image(star, xPositions[i], yPositions[i], 30, 30);
+    }
+  };
+
+  drawStars();
+
+}
+  } 
+  </script>
+</head>
+<body>
+  <h1>Drawing basics</h1>
+  <p>Challenge: The Snowman</p>
+  <canvas id="pjs"> </canvas>
+</body>
+</html>
