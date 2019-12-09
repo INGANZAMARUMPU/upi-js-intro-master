@@ -5,27 +5,28 @@
   <link rel="icon" href="upi.ico" type="image/x-icon" />
   <script src="processing.js"></script>
   <script type="application/processing" data-processing-target="pjs">
-    void setup() {
-      size(400, 400);
-background(144, 240, 234);
+void setup() {
+  size(400, 400);
+  background(144, 240, 234);
 
-// Draw the sun
-noStroke();
-fill(255, 140, 0);
-ellipse(335, 66, 70, 70);
+  // Draw the sun
+  noStroke();
+  fill(255, 140, 0);
+  ellipse(335, 66, 70, 70);
 
-// Get images from library and remember in variables
-var grass = loadImage("cute/GrassBlock.png");
-var tree = loadImage("cute/TreeUgly.png");
-
-// Draw the tree and grass once
-var x = 0;
-while(x<400){
-    image(grass, x, 270);
-    image(tree, x, 200);
-    x+=100;
-}
+  // Get images from library and remember in variables
+  grass = loadImage("cute/GrassBlock.png");
+  tree = loadImage("cute/TreeUgly.png");
+  draw = function(){
+    // Draw the tree and grass once
+    var x = 0;
+    while(x<400){
+      image(grass, x, 270);
+      image(tree, x, 200);
+      x+=100;
     }
+  }
+}
   </script>
 </head>
 <body>
