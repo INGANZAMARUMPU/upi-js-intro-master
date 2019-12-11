@@ -44,11 +44,11 @@ Tulip.prototype.draw = function() {
 /*********************
 *Sunflower Object Type
 **********************/
+
 var Sunflower = function(x, y, height) {
-    this.x = x;
-    this.y = y;
-    this.height = height;
+    Flower.call(this, x, y, height);
 };
+Sunflower.prototype = Object.create(Flower.prototype);
 
 Sunflower.prototype.draw = function() {
     fill(16, 122, 12);
