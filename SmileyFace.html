@@ -7,9 +7,9 @@
   <script type="application/processing" data-processing-target="pjs">
     void setup() {
       size(400, 400);
-var faceObj = {
-    centerX: 100, 
-    centerY: 100
+var SmileyFace = function(centerX, centerY){
+    this.centerX = centerX; 
+    this.centerY = centerY;
 };
 var drawSmiley = function(faceObj) {
     fill(255, 234, 0);
@@ -22,7 +22,8 @@ var drawSmiley = function(faceObj) {
     arc(faceObj.centerX, faceObj.centerY+10, 64, 40, radians(0), radians(180));
 };
 
-drawSmiley(faceObj);
+// faceObj
+// drawSmiley(faceObj);
     }
   </script>
 </head>
