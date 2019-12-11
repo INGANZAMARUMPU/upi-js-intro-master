@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UPI - Web Programming 101</title>
+  <link rel="icon" href="upi.ico" type="image/x-icon" />
+  <script src="processing.js"></script>
+  <script type="application/processing" data-processing-target="pjs">
+void setup() {
+  size(400, 400);
+  background(144, 240, 234);
+var recipeTitle = "Bread";
+var recipeServings = 2;
+var recipeIngredients = ["Flour", "Water"];
+
+fill(26, 26, 26);
+textSize(20);
+text(recipeTitle, 10, 23);
+text("Serves: " + recipeServings, 10, 55);
+text("Ingredients: " + recipeIngredients, 10, 85);
+}
+  </script>
+</head>
+<body>
+  <h1>Drawing basics</h1>
+  <p>Challenge: The Snowman</p>
+  <canvas id="pjs"> </canvas>
+</body>
+</html>
