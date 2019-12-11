@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UPI - Web Programming 101</title>
+  <link rel="icon" href="upi.ico" type="image/x-icon" />
+  <script src="processing.js"></script>
+  <script type="application/processing" data-processing-target="pjs">
+    void setup() {
+      size(400, 400);
+var bigRainbow = {
+    x: 200,
+    y: 200,
+    radius: 300
+};
+
+var drawRainbow = function(rainbow) {
+    noFill();
+    strokeWeight(5);
+    stroke(255, 0, 0);
+    arc(rainbow.x, rainbow.y, rainbow.radius, rainbow.radius, radians(180), radians(360));
+    stroke(250, 200, 0);
+    arc(rainbow.x, rainbow.y, rainbow.radius-10, rainbow.radius-10, radians(180), radians(360));
+    stroke(240, 255, 102);
+    arc(rainbow.x, rainbow.y, rainbow.radius-20, rainbow.radius-20, radians(180), radians(360));
+    stroke(29, 255, 13);
+    arc(rainbow.x, rainbow.y, rainbow.radius-30, rainbow.radius-30, radians(180), radians(360));
+    stroke(122, 155, 255);
+    arc(rainbow.x, rainbow.y, rainbow.radius-40, rainbow.radius-40, radians(180), radians(360));
+};
+
+drawRainbow(bigRainbow);
+    }
+  </script>
+</head>
+<body>
+  <h1>Drawing basics</h1>
+  <p>Challenge: The Snowman</p>
+  <canvas id="pjs"> </canvas>
+</body>
+</html>
