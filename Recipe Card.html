@@ -8,9 +8,15 @@
 void setup() {
   size(400, 400);
   background(144, 240, 234);
-var recipeTitle = "Fish";
-var recipeServings = 5;
-var recipeIngredients = ["Salt", "Oil"];
+var recipe = {
+    title : "Fish",
+    servings : 5,
+    ingredients : ["Salt", "Oil"],
+};
+
+var recipeTitle = recipe.title;
+var recipeServings = recipe.servings;
+var recipeIngredients = recipe.ingredients;
 
 fill(26, 26, 26);
 textSize(20);
