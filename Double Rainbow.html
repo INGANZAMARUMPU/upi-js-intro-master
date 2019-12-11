@@ -7,10 +7,10 @@
   <script type="application/processing" data-processing-target="pjs">
     void setup() {
       size(400, 400);
-var bigRainbow = {
-    x: 200,
-    y: 200,
-    radius: 300
+var Rainbow = function(x, y, radius){
+    this.x = x;
+    this.y = y;
+    this.radius = radius;
 };
 
 var drawRainbow = function(rainbow) {
@@ -28,7 +28,7 @@ var drawRainbow = function(rainbow) {
     arc(rainbow.x, rainbow.y, rainbow.radius-40, rainbow.radius-40, radians(180), radians(360));
 };
 
-drawRainbow(bigRainbow);
+// drawRainbow(bigRainbow);
     }
   </script>
 </head>
