@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UPI - Web Programming 101</title>
+  <link rel="icon" href="upi.ico" type="image/x-icon" />
+  <script src="processing.js"></script>
+  <script type="application/processing" data-processing-target="pjs">
+    void setup() {
+      size(400, 400);
+var movies = [
+    {
+        title: "Puff the Magic Dragon",
+        review: "Best movie ever!!"
+    }
+];
+
+fill(84, 140, 209);
+textAlign(CENTER, CENTER);
+textSize(20);
+text(movies[0].title, 200, 50);     
+    }
+  </script>
+</head>
+<body>
+  <h1>Drawing basics</h1>
+  <p>Challenge: The Snowman</p>
+  <canvas id="pjs"> </canvas>
+</body>
+</html>
