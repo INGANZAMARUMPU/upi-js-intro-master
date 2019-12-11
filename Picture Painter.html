@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UPI - Web Programming 101</title>
+  <link rel="icon" href="upi.ico" type="image/x-icon" />
+  <script src="processing.js"></script>
+  <script type="application/processing" data-processing-target="pjs">
+void setup() {
+  size(400, 400);
+  background(144, 240, 234);
+  image1 = loadImage("avatars/leaf-green.png");
+  image2 = loadImage("avatars/leaf-blue.png");
+  image3 = loadImage("avatars/leaf-orange.png");
+  image4 = loadImage("avatars/leaf-grey.png");
+}
+void draw(){
+    var paintBrush = {
+        x: 200,
+        y: 200,
+        img: image1
+    };
+
+    var paintCanvas = function() {
+        imageMode(CENTER);
+        image(paintBrush.img, paintBrush.x, paintBrush.y);
+    };
+
+    paintCanvas();
+}
+  </script>
+</head>
+<body>
+  <h1>Drawing basics</h1>
+  <p>Challenge: The Snowman</p>
+  <canvas id="pjs"> </canvas>
+</body>
+</html>
