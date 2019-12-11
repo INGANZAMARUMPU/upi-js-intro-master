@@ -15,7 +15,7 @@ var Flower = function(x, y, height) {
 };
 
 Flower.prototype.growBy = function(amount) {
-    this.height += amount;
+    this.height += amount*2;
 };
 
 var Tulip = function(x, y, height) {
@@ -86,10 +86,10 @@ var drawScene = function() {
 };
 
 mouseClicked = function() {
-    // sunflower.growBy(20);
-    // tulip.growBy(10);
-    // tulip1.growBy(20);
-    // sunflower1.growBy(10);
+    sunflower.growBy(20);
+    tulip.growBy(10);
+    tulip1.growBy(20);
+    sunflower1.growBy(10);
     drawScene();
 };
 
