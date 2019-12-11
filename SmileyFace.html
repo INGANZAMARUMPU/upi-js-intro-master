@@ -11,19 +11,19 @@ var SmileyFace = function(centerX, centerY){
     this.centerX = centerX; 
     this.centerY = centerY;
 };
-var drawSmiley = function(faceObj) {
+SmileyFace.prototype.draw = function() {
     fill(255, 234, 0);
-    ellipse(faceObj.centerX, faceObj.centerY, 150, 150);
+    ellipse(this.centerX, this.centerY, 150, 150);
     fill(0, 0, 0);
-    ellipse(faceObj.centerX-30, faceObj.centerY-30, 20, 20); 
-    ellipse(faceObj.centerX+30, faceObj.centerY-30, 20, 20); 
+    ellipse(this.centerX-30, this.centerY-30, 20, 20); 
+    ellipse(this.centerX+30, this.centerY-30, 20, 20); 
     noFill(); 
     strokeWeight(3);
-    arc(faceObj.centerX, faceObj.centerY+10, 64, 40, radians(0), radians(180));
+    arc(this.centerX, this.centerY+10, 64, 40, radians(0), radians(180));
 };
 
 var faceObj = new SmileyFace(100, 100);
-drawSmiley(faceObj);
+faceObj.draw();
     }
   </script>
 </head>
