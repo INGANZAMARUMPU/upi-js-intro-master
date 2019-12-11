@@ -25,7 +25,11 @@ void draw(){
         image(paintBrush.img, paintBrush.x, paintBrush.y);
     };
 
-    paintCanvas();
+    mouseMoved = function(){
+        paintBrush.x = mouseX;
+        paintBrush.y = mouseY;
+        paintCanvas();
+    };
 }
   </script>
 </head>
