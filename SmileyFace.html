@@ -21,9 +21,13 @@ SmileyFace.prototype.draw = function() {
     strokeWeight(3);
     arc(this.centerX, this.centerY+10, 64, 40, radians(0), radians(180));
 };
+SmileyFace.prototype.speak = function(word) {
+    text(word, this.centerX, this.centerY+90);
+};
 
 var faceObj = new SmileyFace(100, 100);
 faceObj.draw();
+faceObj.speak("readability counts!");
     }
   </script>
 </head>
