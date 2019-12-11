@@ -19,10 +19,9 @@ Flower.prototype.growBy = function(amount) {
 };
 
 var Tulip = function(x, y, height) {
-    this.x = x;
-    this.y = y;
-    this.height = height;
+    Flower.call(this, x, y, height);
 };
+Tulip.prototype = Object.create(Flower.prototype);
 
 Tulip.prototype.draw = function() {
     noStroke();
