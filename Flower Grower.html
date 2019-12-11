@@ -70,14 +70,18 @@ Sunflower.prototype.growBy = function(amount) {
 ***************/
 
 /** create object instances **/
-var tulip = new Tulip(38, 390, 150);
-var sunflower = new Sunflower(186, 390, 100);
+var tulip = new Tulip(40, 390, 150);
+var sunflower = new Sunflower(120, 390, 100);
+var tulip1 = new Tulip(200, 390, 150);
+var sunflower1 = new Sunflower(300, 390, 100);
 
 
 var drawScene = function() {
     background(207, 250, 255);
     tulip.draw();
     sunflower.draw();
+    tulip1.draw();
+    sunflower1.draw();
 };
 
 mouseClicked = function() {
